@@ -1,0 +1,61 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background: linear-gradient(135deg, #0066cc, #004999);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos cards de eventos */
+.card-evento {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.card-evento:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo dos botões de ação */
+.btn-acao {
+  margin-right: 5px;
+}
+
+/* Responsividade para telas pequenas (celular) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .card-evento {
+    margin-bottom: 15px;
+  }
+}
+
+/* Acessibilidade: destaque ao focar com teclado */
+.btn:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+
+/* Estilo para mensagens de feedback */
+.mensagem-sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
